@@ -1,7 +1,7 @@
 # HABANEROS
-Clanovi Tima:
+Članovi Tima:
 
-1. Hasan Gro�ic
-2. Jasmin Had�ajlic
-3. Samir Durakovic
-4. Ferhat Dobraca
+1. Hasan Grošić
+2. Jasmin Hadžajlić
+3. Samir Duraković
+4. Ferhat Dobrača
