@@ -1,7 +1,7 @@
 # HABANEROS
-Èlanovi Tima:
+Clanovi Tima:
 
-1. Hasan Grosiæ
-2. Jasmin Hadžajliæ
-3. Samir Durakoviæ
-4. Ferhat Dobraèa
+1. Hasan Grošic
+2. Jasmin Hadžajlic
+3. Samir Durakovic
+4. Ferhat Dobraca
