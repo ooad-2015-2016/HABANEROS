@@ -1,0 +1,15 @@
+SOLID PRINCIPI:
+1. Princip pojedinačne odgovornosti
+Princip pojedinačne je zadovoljen pošto nema klasa koje imaju više razloga za promjenu. Klase su kreirane sa ciljem da ne obavljaju puno aktivnosti i da imaju samo jednu odgovornost.
+
+2. Otvoreno zatvoreni princip
+Otvoreno zatvoreni princip je zadovoljen. Ovaj zaključak se može izvesti prilikom posmatranja klasa 'Osoba' i 'vozilo'. Klase 'uposlenik' i 'korisnik se nasljeđuju klasu 'Osoba' pa je navedena klasa otvorena za nadogradnju, a zatvorena za modifikaciju. Klase 'Automobil', 'Autobus' i 'Kamion' nasljeđuju klasu 'Vozilo' pa je navedena klasa otvorena za nadogradnju, a zatvorena za modifikaciju. Ako želimo dodati neku novu klasu ona može biti samo osoba ili vrsta vozila koje bi nasljedile klase 'Osoba' i 'Vozilo', a dok bi u novoj klasi mogli dodavati metode.  
+
+3. Liskov princip zamjene
+Lispov princip zamjene je zadovoljen jer svaka klasa koja nasljeđuje neku drugu klasu uvijek će morati definisati sve atribute.
+
+4. Princip inverzije ovisnosti
+
+
+5. Princip izoliranja interfejsa
+U kreiranom dijagramu klasa nema niti jedna tzv. "debela" klasa i ne postoje metode koje se neće koristiti tako da je ovaj princip zadovoljen.
