@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="e6b96bef-b889-431e-8583-eb206a1d294e"
-    Publisher="CN=civgi"
+    Name="6f6cb5ca-aef0-41c3-9c15-c77e58b690bb"
+    Publisher="CN=pc"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="e6b96bef-b889-431e-8583-eb206a1d294e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="6f6cb5ca-aef0-41c3-9c15-c77e58b690bb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>ProjekateParking</DisplayName>
-    <PublisherDisplayName>civgi</PublisherDisplayName>
+    <DisplayName>eParking</DisplayName>
+    <PublisherDisplayName>pc</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="ProjekateParking.App">
+      EntryPoint="eParking.App">
       <uap:VisualElements
-        DisplayName="ProjekateParking"
+        DisplayName="eParking"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="ProjekateParking"
+        Description="eParking"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
