@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="eParking.App"
+    x:Class="projekateParking.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:eParking"
+    xmlns:local="using:projekateParking"
     RequestedTheme="Light">
 
 </Application>

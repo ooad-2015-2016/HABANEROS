@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="projekateParking.Views.login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:projekateParking.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="dugmeLogin" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,360,0,0" Click="dugmeLogin_Click"/>
+        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="38" Margin="230,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" PlaceholderText="Unesi username..."/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="230,288,0,0" VerticalAlignment="Top" Width="212" PlaceholderText="Unesi password..."/>
+        <Button x:Name="dugmeNazad" Content="Nazad" HorizontalAlignment="Left" Height="32" Margin="230,360,0,0" VerticalAlignment="Top" Width="70" Click="dugmeNazad_Click"/>
+
+    </Grid>
+</Page>
