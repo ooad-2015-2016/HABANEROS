@@ -10,5 +10,7 @@ namespace projekateParking.BazaPodataka
     public static class Baza
     {
         public static projekateParking.ViewModel.eParking sistem = new eParking();
+        public static int index;
+        public static string textBlockPoruka = "";
     }
 }

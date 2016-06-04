@@ -8,10 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="dugmeLogin" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,360,0,0" Click="dugmeLogin_Click"/>
-        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="38" Margin="230,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" PlaceholderText="Unesi username..."/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="230,288,0,0" VerticalAlignment="Top" Width="212" PlaceholderText="Unesi password..."/>
-        <Button x:Name="dugmeNazad" Content="Nazad" HorizontalAlignment="Left" Height="32" Margin="230,360,0,0" VerticalAlignment="Top" Width="70" Click="dugmeNazad_Click"/>
-
+        <RelativePanel Margin="100,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="330" Width="314">
+            <Button x:Name="dugmeLogin" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Click="dugmeLogin_Click" RenderTransformOrigin="-0.471,-2.062" Margin="236,274,-20,-88"/>
+            <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="9" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" PlaceholderText="Unesite username..." Margin="94,24,-10,-24"/>
+            <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="94,72,-10,-24" VerticalAlignment="Top" Width="212" PlaceholderText="Unesite password..."/>
+            <Button x:Name="dugmeNazad" Content="Nazad" HorizontalAlignment="Left" Height="32" Margin="94,274,-10,-78" VerticalAlignment="Top" Width="70" Click="dugmeNazad_Click"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="15,77,-2,-24" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" />
+            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,29,-10,-24" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="textBlockGreska" HorizontalAlignment="Left" Margin="94,188,-10,-41" TextWrapping="Wrap" Text="Greska" VerticalAlignment="Center" Width="212" Height="81" FontSize="10.667" Foreground="Red" Visibility="Collapsed"/>
+            <RadioButton x:Name="radioButtonKorisnik" Content="Korisnik" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="94,120,-94,-120" Checked="radioButtonKorisnik_Checked"/>
+            <RadioButton x:Name="radioButtonUposlenik" Content="Uposlenik" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="94,151,-94,-151"/>
+        </RelativePanel>
     </Grid>
 </Page>

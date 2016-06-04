@@ -8,25 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="dugmeNazad" Content="Nazad" HorizontalAlignment="Left" Height="60" Margin="204,595,0,0" VerticalAlignment="Top" Width="141" Click ="dugmeNazad_Click"/>
-        <Button x:Name="dugmeSpremi" Content="Spremi" HorizontalAlignment="Left" Height="60" Margin="408,595,0,0" VerticalAlignment="Top" Width="141" Click ="dugmeSpremi_Click"/>
-        <TextBox x:Name="TextBoxImePrezime" HorizontalAlignment="Left" Height="25" Margin="204,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite ime i prezime..."/>
-        <TextBox x:Name="TextBoxBrojLicneKarte" HorizontalAlignment="Left" Height="25" Margin="204,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite broj lične karte..."/>
-        <TextBox x:Name="TextBoxJMBG" HorizontalAlignment="Left" Height="25" Margin="204,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite JMBG..."/>
-        <CheckBox x:Name="checkBoxInvalid" Content="Korisnik sa invaliditetom" HorizontalAlignment="Left" Margin="204,299,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBoxPenzioner" Content="Penzioner" HorizontalAlignment="Left" Margin="204,331,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="88,59,0,0" TextWrapping="Wrap" Text="Ime i prezime:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="80,109,0,0" TextWrapping="Wrap" Text="Broj lične karte:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="140,159,0,0" TextWrapping="Wrap" Text="JMBG:" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxBrojTelefona" HorizontalAlignment="Left" Height="25" Margin="204,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite broj telefona..."/>
-        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="93,209,0,0" TextWrapping="Wrap" Text="Broj telefona:" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxAdresa" HorizontalAlignment="Left" Height="8" Margin="204,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite adresu..."/>
-        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="132,258,0,0" TextWrapping="Wrap" Text="Adresa:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="79,320,0,0" TextWrapping="Wrap" Text="Posebni statusi:" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextBoxUsername" HorizontalAlignment="Left" Height="8" Margin="204,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" PlaceholderText="Unesite username..."/>
-        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="111,384,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="116,433,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="204,433,0,0" VerticalAlignment="Top" Width="345" Password="" PlaceholderText="Unesite password..."/>
-        <TextBlock x:Name="textBlockGreska" HorizontalAlignment="Left" Margin="204,481,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="345" Height="109" FontSize="10.667" Foreground="Red" Visibility="Collapsed"/>
+        <RelativePanel Margin="100,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button x:Name="dugmeNazad" Content="Nazad" HorizontalAlignment="Left" Height="60" Margin="125,541,0,0" VerticalAlignment="Center" Width="141" Click ="dugmeNazad_Click"/>
+            <Button x:Name="dugmeSpremi" Content="Spremi" HorizontalAlignment="Left" Height="60" Margin="329,541,0,0" VerticalAlignment="Center" Width="141" Click ="dugmeSpremi_Click"/>
+            <TextBox x:Name="TextBoxImePrezime" HorizontalAlignment="Left" Height="25" Margin="125,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite ime i prezime..."/>
+            <TextBox x:Name="TextBoxBrojLicneKarte" HorizontalAlignment="Left" Height="25" Margin="125,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite broj lične karte..."/>
+            <TextBox x:Name="TextBoxJMBG" HorizontalAlignment="Left" Height="25" Margin="125,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite JMBG..."/>
+            <CheckBox x:Name="checkBoxInvalid" Content="Korisnik sa invaliditetom" HorizontalAlignment="Left" Margin="125,245,0,0" VerticalAlignment="Center"/>
+            <CheckBox x:Name="checkBoxPenzioner" Content="Penzioner" HorizontalAlignment="Left" Margin="125,277,0,0" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="9,5,0,0" TextWrapping="Wrap" Text="Ime i prezime:" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="1,55,0,0" TextWrapping="Wrap" Text="Broj lične karte:" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="61,105,0,0" TextWrapping="Wrap" Text="JMBG:" VerticalAlignment="Center"/>
+            <TextBox x:Name="TextBoxBrojTelefona" HorizontalAlignment="Left" Height="25" Margin="125,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite broj telefona..."/>
+            <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="14,155,0,0" TextWrapping="Wrap" Text="Broj telefona:" VerticalAlignment="Center"/>
+            <TextBox x:Name="TextBoxAdresa" HorizontalAlignment="Left" Height="8" Margin="125,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite adresu..."/>
+            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="53,204,0,0" TextWrapping="Wrap" Text="Adresa:" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="0,266,0,0" TextWrapping="Wrap" Text="Posebni statusi:" VerticalAlignment="Center"/>
+            <TextBox x:Name="TextBoxUsername" HorizontalAlignment="Left" Height="8" Margin="125,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" PlaceholderText="Unesite username..."/>
+            <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="32,330,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Center"/>
+            <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="37,379,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Center"/>
+            <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="125,379,0,0" VerticalAlignment="Center" Width="345" Password="" PlaceholderText="Unesite password..."/>
+            <TextBlock x:Name="textBlockGreska" HorizontalAlignment="Left" Margin="125,427,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="345" Height="109" FontSize="10.667" Foreground="Red" Visibility="Collapsed"/>
+        </RelativePanel>
     </Grid>
 </Page>

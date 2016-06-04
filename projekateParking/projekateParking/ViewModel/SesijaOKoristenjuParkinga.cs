@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace projekateParking.ViewModel
 {
-    class SesijaOKoristenjuParkinga
+    public class SesijaOKoristenjuParkinga
     {
+        static int IDsljedeci = 1;
         public DateTime vrijemeDolaska { get; set; }
         public DateTime vrijemeOdlaska { get; set; }
-        public String ID { get; set; }
-        public String IDRegistracije { get; set; }
+        public int ID { get; set; }
+        public int mjesto;
+
+        public SesijaOKoristenjuParkinga(DateTime vrijemeDolaska, int mjesto)
+        {
+            ID = IDsljedeci++;
+            this.vrijemeDolaska = vrijemeDolaska;
+            this.mjesto = mjesto;
+        }
     }
 }

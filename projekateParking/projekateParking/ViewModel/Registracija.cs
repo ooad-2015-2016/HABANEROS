@@ -3,29 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using projekateParking.Models;
 
 namespace projekateParking.ViewModel
 {
-    enum PackageType { }
-    class Registracija
+    public class Registracija
     {
-        public String ID { get; set; }
+        static int IDsljedeci = 1;
+        public Vozilo vozilo { get; set; }
+        public int ID { get; set; }
         public DateTime datumRegistracije { get; }
         public DateTime datumIstekaRegistracije { get; set; }
-        public PackageType tipPaketa { get; set; }
+        public String tipPaketa { get; set; }
         public Boolean stalnoMjesto { get; set; }
-        public Boolean specijalniKorisnik { get; set; }
+        public List<SesijaOKoristenjuParkinga> sesijaokoristenjuparkinga;
+        
 
-        Registracija(String ID, DateTime datumRegistracije, DateTime datumIstekaRegistracije, PackageType tipPaketa, Boolean stalnoMjesto, bool specijalniKorisnik)
+        public Registracija(DateTime datumRegistracije, DateTime datumIstekaRegistracije, String tipPaketa, Boolean stalnoMjesto, Vozilo vozilo)
         {
-            this.ID = ID;
+            this.ID = IDsljedeci++;
             this.datumIstekaRegistracije = datumIstekaRegistracije;
             this.datumRegistracije = datumRegistracije;
             this.tipPaketa = tipPaketa;
             this.stalnoMjesto = stalnoMjesto;
-            this.specijalniKorisnik = specijalniKorisnik;
+            this.vozilo = vozilo;
+            sesijaokoristenjuparkinga = new List<SesijaOKoristenjuParkinga>(0);
         }
-
-
+        public void dodajSesiju(SesijaOKoristenjuParkinga sesija)
+        {
+            sesijaokoristenjuparkinga.Add(sesija);
+        }
+        public int zatvoriSesiju()
+        {
+            sesijaokoristenjuparkinga[sesijaokoristenjuparkinga.Count() - 1].vrijemeOdlaska = DateTime.Now;
+            return sesijaokoristenjuparkinga[sesijaokoristenjuparkinga.Count - 1].mjesto;
+        }
     }
 }

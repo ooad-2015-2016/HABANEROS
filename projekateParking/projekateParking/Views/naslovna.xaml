@@ -8,8 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="LOGIN" HorizontalAlignment="Left" Margin="392,256,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="dugmeRegistriraj" Content="REGISTRIRAJ SE&#xD;&#xA;" HorizontalAlignment="Left" Margin="630,256,0,0" VerticalAlignment="Top" Height="32" Click="dugmeRegistriraj_Click"/>
+        <RelativePanel Margin="0,400,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="dugmeLogin" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="32" Click="dugmeLogin_Click"/>
+            <Button x:Name="dugmeRegistriraj" Content="Registriraj se&#xA;" HorizontalAlignment="Left" Margin="174,0,0,-10" VerticalAlignment="Top" Height="32" Click="dugmeRegistriraj_Click"/>
+        </RelativePanel>
+        <Image x:Name="logoNaslovna" HorizontalAlignment="Center" Height="130" Margin="0" VerticalAlignment="Center" Width="456" Source="ms-appx:///Assets/logo.png"/>
+        <Button x:Name="dugmeSistem" Content="Sistem" HorizontalAlignment="Left" Height="38" Margin="600,608,0,0" VerticalAlignment="Top" Width="74" Click="dugmeSistem_Click"/>
 
     </Grid>
 </Page>

@@ -107,7 +107,7 @@ namespace projekateParking.Views
                 for(int i = 0; i < JMBG.Length; i++)
                     if(JMBG[i] < '0' || JMBG[i] > '9')
                     {
-                        greska = "*Neispravan JMBG\n";
+                        greska += "*Neispravan JMBG\n";
                         flag = true;
                         break;
                     }
@@ -125,7 +125,7 @@ namespace projekateParking.Views
                 for (int i = 0; i < brojTelefona.Length; i++)
                     if (brojTelefona[i] < '0' || brojTelefona[i] > '9')
                     {
-                        greska = "*Neispravan broj telefona\n";
+                        greska += "*Neispravan broj telefona\n";
                         flag = true;
                         break;
                     }
@@ -146,9 +146,10 @@ namespace projekateParking.Views
                 greska += "*Niste unijeli username\n";
                 flag = true;
             }
-            else
+            else if(Baza.sistem.pronadjiKorisnika(username) != -1)
             {
-
+                greska += "*Username vec postoji\n";
+                flag = true;
             }
 
             // provjera password 
@@ -167,7 +168,7 @@ namespace projekateParking.Views
             if (!flag)
             {
                 String ID = "K" + sljedeciID.ToString();
-                Baza.sistem.dodajKorisnika(ID,imePrezime, brojLicneKarte, JMBG, brojTelefona, adresa, specijalniKorisnik);
+                Baza.sistem.dodajKorisnika(imePrezime, brojLicneKarte, JMBG, brojTelefona, adresa, specijalniKorisnik, username, password);
                 sljedeciID++;
                 Frame.Navigate(typeof(naslovna));
                 

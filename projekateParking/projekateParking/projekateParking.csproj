@@ -107,7 +107,11 @@
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Models\Vozilo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Arduino.cs" />
     <Compile Include="ViewModel\eParking.cs" />
+    <Compile Include="ViewModel\eParkingSistem.cs" />
+    <Compile Include="ViewModel\Kamera.cs" />
+    <Compile Include="ViewModel\PrepoznavanjeTablica.cs" />
     <Compile Include="ViewModel\Registracija.cs" />
     <Compile Include="ViewModel\SesijaOKoristenjuParkinga.cs" />
     <Compile Include="Views\korisnikView.xaml.cs">
@@ -122,6 +126,9 @@
     <Compile Include="Views\registracijaKorisnika.xaml.cs">
       <DependentUpon>registracijaKorisnika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Sistem.xaml.cs">
+      <DependentUpon>Sistem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\upravnikView.xaml.cs">
       <DependentUpon>upravnikView.xaml</DependentUpon>
     </Compile>
@@ -133,6 +140,7 @@
     <None Include="projekateParking_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -167,10 +175,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Sistem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\upravnikView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Slike\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

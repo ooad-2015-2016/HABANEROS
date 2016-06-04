@@ -7,5 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="buttonLogout" Content="Logout" HorizontalAlignment="Left" Height="40" Margin="184,534,0,0" VerticalAlignment="Top" Width="120" Click="buttonLogout_Click"/>
+    </Grid>
 </Page>

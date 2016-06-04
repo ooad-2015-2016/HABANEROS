@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace projekateParking.Models
 {
-    class Uposlenik : Osoba
+    public class Uposlenik : Osoba
     {
-        public String ID { get; set; }
+        public String username { get; set; }
+        public String password { get; set; }
 
-        Uposlenik(String imePrezime, String brojLicneKarte, String JMBG, String brojTelefona, String adresa, String ID):
+        public Uposlenik(String imePrezime, String brojLicneKarte, String JMBG, String brojTelefona, String adresa, String username, String password):
             base(imePrezime, brojLicneKarte, JMBG, brojTelefona, adresa)
         {
-            this.ID = ID;
+            this.username = username;
+            this.password = password;
         }
     }
 }

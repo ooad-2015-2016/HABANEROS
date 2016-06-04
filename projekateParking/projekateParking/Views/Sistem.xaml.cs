@@ -13,8 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using projekateParking.ViewModel;
-
-
+using System.Threading.Tasks;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace projekateParking.Views
@@ -22,27 +21,23 @@ namespace projekateParking.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-
-    public sealed partial class naslovna : Page
+    public sealed partial class Sistem : Page
     {
-        //SerialPort serial;
-        public naslovna()
+        eParkingSistem sistem;
+        public Sistem()
         {
             this.InitializeComponent();
+            sistem = new eParkingSistem();
         }
 
-        private void dugmeRegistriraj_Click(object sender, RoutedEventArgs e)
+        private void buttonPokreni_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(registracijaKorisnika));
-        }
-        private void dugmeLogin_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(login));
+            sistem.Pokreni(PreviewControl);
         }
 
-        private void dugmeSistem_Click(object sender, RoutedEventArgs e)
+        private void buttonNazad_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Sistem));
+            Frame.Navigate(typeof(naslovna));
         }
     }
 }

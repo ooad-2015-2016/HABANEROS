@@ -26,5 +26,10 @@ namespace projekateParking.Views
         {
             this.InitializeComponent();
         }
+
+        private void buttonLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(naslovna));
+        }
     }
 }
