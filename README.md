@@ -66,4 +66,4 @@ Podjela korisnika:
 Pri samom pokretanju programa otvara se naslovna strana, na kojoj je korisniku ili uposleniku omogućena registracija, prijava ili ulazak u administraciju sistema. U zavisnosti od vrste privilegija korisnika aplikacije, omogućavaju mu se različite opcije. Korisniku se nudi uvid u stanje njegovog računa, dok se uposlenicima nudi uređivanje određenih specifikacija samog sistema, i pristup bazi podataka. Opcija sistem u glavnom meniju pokreće sistem automatskog upravljanja i detekcije vozila korisnika pomoću kamere.
 
 * Eksterni uređaj kamera: https://github.com/ooad-2015-2016/HABANEROS/blob/master/projekateParking/projekateParking/ViewModel/Kamera.cs
-* Mogilna funkcionalnost kamera: https://github.com/ooad-2015-2016/HABANEROS/blob/master/projekateParking_mobitel/projekateParking/ViewModel/Kamera.cs
+* Mobilna funkcionalnost kamera: https://github.com/ooad-2015-2016/HABANEROS/blob/master/projekateParking_mobitel/projekateParking/ViewModel/Kamera.cs
