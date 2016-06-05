@@ -8,6 +8,31 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="buttonLogout" Content="Logout" HorizontalAlignment="Left" Height="40" Margin="184,534,0,0" VerticalAlignment="Top" Width="120" Click="buttonLogout_Click"/>
+        <RelativePanel x:Name="relativePanel" HorizontalAlignment="Left" Height="700" Margin="642,10,0,0" VerticalAlignment="Top" Width="638" Visibility="Collapsed">
+            <RelativePanel Height="400" Margin="0,74,0,226" VerticalAlignment="Center" Width="532" Background="#FF6C6C6C" HorizontalAlignment="Center">
+                <TextBlock x:Name="textBlockSesija" HorizontalAlignment="Left" Height="322" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448" Margin="38,32,-424,-334" FontSize="20" Foreground="White"/>
+            </RelativePanel>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="32" TextWrapping="Wrap" Text="Sesije korištenja parkinga: " VerticalAlignment="Top" Width="247" Margin="0,10,0,-10" FontSize="24"/>
+            <Button x:Name="dugmePrethodna" Content="Prethodna" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,507,0,-507" Click="dugmePrethodna_Click"/>
+            <Button x:Name="dugmeSljedeca" Content="Sljedeća" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,507,-172,-507" Click="dugmeSljedeca_Click"/>
+        </RelativePanel>
+        <Grid Margin="10,0,719,0" VerticalAlignment="Center" Height="557">
+            <RelativePanel Margin="106,78,0,0">
+                <Button x:Name="dugmeObrisiKorisnika" Content="Obriši korisnika" HorizontalAlignment="Left" Margin="202,268,-278,0" VerticalAlignment="Top" Click="dugmeObrisiKorisnika_Click" Width="198"/>
+                <Button x:Name="dugmeLogout" Content="Logout" HorizontalAlignment="Left" Margin="202,437,-23,-5" VerticalAlignment="Top" Click="dugmeLogout_Click"/>
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="38,10,0,-10" TextWrapping="Wrap" Text="Pregled sistema:" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="90,54,-34,0" TextWrapping="Wrap" Text="Broj korisnika:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="77,79,-62,0" TextWrapping="Wrap" Text="Broj registracija:" VerticalAlignment="Top" RenderTransformOrigin="-2.742,-1.4"/>
+                <TextBlock x:Name="textBlock4" Margin="25,185,-25,-12" TextWrapping="Wrap" Text="Brisanje korisnika:" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="112,237,-109,-6" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlockBrojKorisnika" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="bk" VerticalAlignment="Top" Width="225" Margin="202,54,-365,-54"/>
+                <TextBlock x:Name="textBlockBrojRegistracija" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="br" VerticalAlignment="Top" Width="225" Margin="202,79,-365,-79"/>
+                <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="113,104,-98,-25" TextWrapping="Wrap" Text="Broj sesija:" VerticalAlignment="Top" RenderTransformOrigin="-2.742,-1.4"/>
+                <TextBlock x:Name="textBlockBrojSesija" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="bs" VerticalAlignment="Top" Width="225" Margin="202,104,-365,-104"/>
+                <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198" Margin="202,231,-329,-231" PlaceholderText="Unesite username..."/>
+                <TextBlock x:Name="textBlockGreska" HorizontalAlignment="Left" Height="55" TextWrapping="Wrap" Text="Greska" VerticalAlignment="Top" Width="198" Margin="202,305,-338,-340" Foreground="Red" FontSize="12" Visibility="Collapsed"/>
+            </RelativePanel>
+            <TextBlock x:Name="textBlockDobrodoslica" HorizontalAlignment="Right" Height="44" TextWrapping="Wrap" Text="Dobrodošao" VerticalAlignment="Top" Width="531" FontSize="26.667" Margin="0,10,10,0"/>
+        </Grid>
     </Grid>
 </Page>

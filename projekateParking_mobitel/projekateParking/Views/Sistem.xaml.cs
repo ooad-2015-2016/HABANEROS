@@ -40,14 +40,7 @@ namespace projekateParking.Views
         {
             Frame.Navigate(typeof(naslovna));
         }
-        public static void postaviPoruku(string poruka)
-        {
-            BazaPodataka.Baza.sistemView.textBlockPoruka.Text = poruka;
-        }
-        public static void postaviSesiju(string sesija)
-        {
-            BazaPodataka.Baza.sistemView.textBlockSesija.Text = sesija;
-        }
+      
 
         private void buttonOdlazak_Click(object sender, RoutedEventArgs e)
         {

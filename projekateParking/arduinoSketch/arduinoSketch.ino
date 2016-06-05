@@ -26,11 +26,11 @@ void loop() {
     else if(znak == 'd')
       dioda(5, 0);
   }
-  else if(digitalRead(7) == HIGH)
+  else if(digitalRead(7) == HIGH){
     Serial.write("U");
+  }
   else if(digitalRead(9) == HIGH)
     Serial.write("I");
-  delay(1000);
 }
 
 void dioda(int pin, int stanje)

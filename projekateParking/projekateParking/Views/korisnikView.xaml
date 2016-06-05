@@ -7,30 +7,50 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="dugmeDodajRegistraciju" Content="Dodaj registraciju" HorizontalAlignment="Left" Margin="116,581,0,0" VerticalAlignment="Top" Click="dugmeDodajRegistraciju_Click"/>
-        <Button x:Name="dugmeOdjaviRegistraciju" Content="Odjavi registraciju" HorizontalAlignment="Left" Margin="426,581,0,0" VerticalAlignment="Top"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,1,0,-1">
         <RelativePanel x:Name="relativePanel" HorizontalAlignment="Left" Height="700" Margin="642,10,0,0" VerticalAlignment="Top" Width="638" Visibility="Collapsed">
             <RelativePanel Height="400" Margin="0,74,0,226" VerticalAlignment="Center" Width="532" Background="#FF6C6C6C" HorizontalAlignment="Center">
-                <TextBlock x:Name="textBlockRegistracija" HorizontalAlignment="Left" Height="322" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448" Margin="38,32,-424,-334" FontSize="20" Foreground="White"/>
+                <TextBlock x:Name="textBlockRegistracija" HorizontalAlignment="Left" Height="250" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" Margin="254,104,-424,-334" FontSize="20" Foreground="White"/>
+                <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Height="250" Margin="46,104,-192,-334" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="20">
+                	<Run Text="ID:"/>
+                	<LineBreak/>
+                	<Run Text="Tip paketa:"/>
+                	<LineBreak/>
+                	<Run Text="Stalno mjesto:"/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="Registarske oznake:"/>
+                	<LineBreak/>
+                	<Run Text="Proizvodjac"/>
+                	<Run Text=":"/>
+                </TextBlock>
+                <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Height="24" Margin="191,183,-299,-187" TextWrapping="Wrap" Text="Podaci o vozilu:" VerticalAlignment="Top" Width="170" FontSize="20" Foreground="#FF8F8F8F"/>
             </RelativePanel>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="32" TextWrapping="Wrap" Text="Aktivne registracije:" VerticalAlignment="Top" Width="247" Margin="0,10,0,-10" FontSize="24"/>
             <Button x:Name="dugmePrethodna" Content="Prethodna" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,507,0,-507" Click="dugmePrethodna_Click"/>
             <Button x:Name="dugmeSljedeca" Content="Sljedeća" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="172,507,-172,-507" Click="dugmeSljedeca_Click"/>
         </RelativePanel>
-        <Button x:Name="dugmeLogout" Content="Logout" HorizontalAlignment="Left" Margin="300,581,0,0" VerticalAlignment="Top" Click="dugmeLogout_click"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="116,88,0,0" TextWrapping="Wrap" Text="Podaci o registraciji:" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="98,138,0,0" TextWrapping="Wrap" Text="Odaberi tip paketa:" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBoxTipPaketa" HorizontalAlignment="Left" Margin="318,137,0,0" VerticalAlignment="Top" Width="166"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="98,192,0,0" TextWrapping="Wrap" Text="Da li zelite stalno mjesto?" VerticalAlignment="Top" RenderTransformOrigin="-2.742,-1.4"/>
-        <CheckBox x:Name="checkBoxStalnoMjesto" Content="" HorizontalAlignment="Left" Margin="318,187,0,0" VerticalAlignment="Top" Width="74"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="116,254,0,0" TextWrapping="Wrap" Text="Podaci o vozilu:" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="104,286,0,0" TextWrapping="Wrap" Text="Unesite registarske oznake:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="104,323,0,0" TextWrapping="Wrap" Text="Unesite proizvodjaca vozila:" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxRegistarskeOznake" HorizontalAlignment="Left" Margin="318,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155" PlaceholderText="Unesite..."/>
-        <TextBox x:Name="textBoxProizvodjacVozila" HorizontalAlignment="Left" Height="5" Margin="318,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155" PlaceholderText="Unesite..."/>
-        <ComboBox x:Name="comboBoxVrstaVozila" HorizontalAlignment="Left" Margin="318,348,0,0" VerticalAlignment="Top" Width="155"/>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="104,360,0,0" TextWrapping="Wrap" Text="Odaberi vrstu vozila:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlockDobrodoslica" HorizontalAlignment="Left" Height="44" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodosao" VerticalAlignment="Top" Width="474" FontSize="26.667"/>
+        <Grid Margin="10,0,719,0" VerticalAlignment="Center" Height="557">
+            <RelativePanel Margin="106,78,0,0">
+                <Button x:Name="dugmeDodajRegistraciju" Content="Dodaj registraciju" HorizontalAlignment="Left" Margin="0,432,0,0" VerticalAlignment="Top" Click="dugmeDodajRegistraciju_Click"/>
+                <Button x:Name="dugmeOdjaviRegistraciju" Content="Odjavi registraciju" HorizontalAlignment="Left" Margin="288,432,0,0" VerticalAlignment="Top" Click="dugmeOdjaviRegistraciju_Click"/>
+                <Button x:Name="dugmeLogout" Content="Logout" HorizontalAlignment="Left" Margin="179,432,0,0" VerticalAlignment="Top" Click="dugmeLogout_click"/>
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="116,0,0,0" TextWrapping="Wrap" Text="Podaci o registraciji:" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="56,54,0,0" TextWrapping="Wrap" Text="Odaberi tip paketa:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="comboBoxTipPaketa" HorizontalAlignment="Left" Margin="202,49,0,0" VerticalAlignment="Top" Width="225" PlaceholderText="Tip paketa"/>
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="15,86,0,0" TextWrapping="Wrap" Text="Da li želite stalno mjesto?" VerticalAlignment="Top" RenderTransformOrigin="-2.742,-1.4"/>
+                <CheckBox x:Name="checkBoxStalnoMjesto" Content="" HorizontalAlignment="Left" Margin="202,81,0,0" VerticalAlignment="Top" Width="74"/>
+                <TextBlock x:Name="textBlock4" Margin="135,178,-135,-5" TextWrapping="Wrap" Text="Podaci o vozilu:" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="3,231,0,0" TextWrapping="Wrap" Text="Unesite registarske oznake:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="3,268,-3,0" TextWrapping="Wrap" Text="Unesite proizvođača vozila:" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBoxRegistarskeOznake" HorizontalAlignment="Left" Margin="202,226,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225" PlaceholderText="Unesite..."/>
+                <TextBox x:Name="textBoxProizvodjacVozila" HorizontalAlignment="Left" Height="5" Margin="202,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225" PlaceholderText="Unesite..."/>
+                <ComboBox x:Name="comboBoxVrstaVozila" HorizontalAlignment="Left" Margin="202,300,0,0" VerticalAlignment="Top" Width="225" PlaceholderText="Vrsta vozila"/>
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="48,305,0,0" TextWrapping="Wrap" Text="Odaberi vrstu vozila:" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlockGreska" HorizontalAlignment="Left" Height="90" Margin="48,337,-318,-407" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="332" Foreground="Red" FontSize="10.667" Visibility="Collapsed"/>
+            </RelativePanel>
+            <TextBlock x:Name="textBlockDobrodoslica" HorizontalAlignment="Right" Height="44" TextWrapping="Wrap" Text="Dobrodošao" VerticalAlignment="Top" Width="531" FontSize="26.667" Margin="0,10,10,0"/>
+        </Grid>
     </Grid>
 </Page>

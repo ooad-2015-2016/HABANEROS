@@ -12,8 +12,8 @@
             <Button x:Name="dugmeLogin" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="32" Click="dugmeLogin_Click"/>
             <Button x:Name="dugmeRegistriraj" Content="Registriraj se&#xA;" HorizontalAlignment="Left" Margin="174,0,0,-10" VerticalAlignment="Top" Height="32" Click="dugmeRegistriraj_Click"/>
             <Button x:Name="dugmeSistem" Content="Sistem" HorizontalAlignment="Left" Height="32" Margin="0,42,0,0" VerticalAlignment="Top" Width="278" Click="dugmeSistem_Click"/>
-</RelativePanel>
-        <Image x:Name="logoNaslovna" HorizontalAlignment="Center" Height="130" Margin="0" VerticalAlignment="Center" Width="456" Source="ms-appx:///Assets/logo.png"/>
-        
+        </RelativePanel>
+        <Image x:Name="logoNaslovna" HorizontalAlignment="Center" Height="100" Margin="10,240,10,207" VerticalAlignment="Center" Width="250" Source="ms-appx:///Assets/logo.png"/>
+
     </Grid>
 </Page>

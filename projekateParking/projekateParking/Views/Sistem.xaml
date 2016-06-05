@@ -8,9 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="buttonPokreni" Content="Pokreni" HorizontalAlignment="Left" Height="69" Margin="102,597,0,0" VerticalAlignment="Top" Width="165" Click="buttonPokreni_Click"/>
-        <Button x:Name="buttonNazad" Content="Nazad" HorizontalAlignment="Left" Height="69" Margin="336,597,0,0" VerticalAlignment="Top" Width="176" Click="buttonNazad_Click"/>
-        <CaptureElement Name="PreviewControl" Margin="250,84,249,180"/>
-        <TextBlock x:Name="textBlockPoruka" HorizontalAlignment="Left" Height="71" Margin="1023,595,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="181"/>
+        <Button x:Name="buttonDolazak" Content="Dolazak" HorizontalAlignment="Left" Height="39" Margin="142,191,0,0" VerticalAlignment="Top" Width="101" Click="buttonPokreni_Click"/>
+        <Button x:Name="buttonNazad" Content="Nazad" HorizontalAlignment="Left" Height="37" Margin="142,355,0,0" VerticalAlignment="Top" Width="101" Click="buttonNazad_Click"/>
+        <CaptureElement Name="PreviewControl" Margin="336,64,295,200"/>
+        <TextBlock x:Name="textBlockPoruka" HorizontalAlignment="Left" Height="24" Margin="172,566,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="994" Foreground="Black" FontSize="13.333" LineHeight="12" TextAlignment="Center"/>
+        <Button x:Name="buttonOdlazak" Content="Odlazak" HorizontalAlignment="Left" Height="39" Margin="142,276,0,0" VerticalAlignment="Top" Width="101" Click="buttonOdlazak_Click"/>
+        <TextBlock x:Name="textBlockSesija" HorizontalAlignment="Left" Height="24" Margin="172,595,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="994" Foreground="Black" FontSize="13.333" LineHeight="12" TextAlignment="Center"/>
     </Grid>
 </Page>
