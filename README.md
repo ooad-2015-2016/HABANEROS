@@ -1,4 +1,7 @@
 # HABANEROS
+
+![alt tag](https://raw.githubusercontent.com/ooad-2015-2016/HABANEROS/master/projekateParking/projekateParking/Assets/logo.png)
+
 ## eParking
 Članovi Tima:
 
