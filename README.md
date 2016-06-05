@@ -9,9 +9,9 @@
 
 ### Opis teme
 
-**eParking** je zamišljen kao sistem koji predstavlja proces parkiranja automobila u garažu namjenjenu različitim tipovima korisnika. 
-Ovako realiziran parking bi korisnicima omogućio da iznajme parking mjesta u željeno vrijeme i na određeni period.
-Na ovaj način se poboljšava organzovanje i funkcionisanje parkinga, izbjegavaju se svakodnevne gužve, te se obezbjeđuje veća sigurnost i dostupnost. 
+**eParking** je zamišljen kao sistem koji predstavlja proces parkiranja vozila u garažu namjenjenu različitim tipovima korisnika. 
+Ovako realiziran parking bi korisnicima omogućio da iznajme parking mjesta u željeno vrijeme i na određeni period. Pogodnost ovog parkinga jeste i online registracija i rezervacija mjesta, što znatno poboljšava funkcionalnost i organizaciju samog parkinga, te uštedu vremena korisnika. Kontrola ulaska vozila na parking se vrši automatizovano na osnovu registarskih oznaka, čija se identfikacija vrši pomoću kamere. Ovakvim sistemom na ulazu doprinosimo bržoj provjeri i procesiranju vozila, što rezultira i znatnim smanjenjem neželjenih gužvi.  
+
 
 ### Procesi
 ####Parking proces
